@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>排球故事</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    body,
+    h1,
+    h2,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* Header with Parallax Effect */
+    .parallax {
+      background-image: url('./img/結局.webp');
+      /* 替換成你的背景圖片 */
+      animation: normal;
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+      color: rgb(255, 166, 94);
+    }
+
+    .parallax .overlay {
+      background: rgba(0, 0, 0, 0.452);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+
+    .parallax h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .parallax p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Content Sections */
+    .content-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 50px 10%;
+      background-color: rgba(250, 214, 94, 0.24);
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .story {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .story h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ec6a43;
+      /* 排球主題的亮色 */
+    }
+
+    .story p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgba(250, 214, 94, 0.24);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1rem;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    /* AOS Animations */
+    [data-aos] {
+      transition: all 0.5s ease-in-out;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .content-section {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .image img {
+        max-width: 100%;
+      }
+
+      .story h2 {
+        font-size: 1.8rem;
+      }
+
+      .story p {
+        font-size: 0.9rem;
+      }
+
+      .parallax h1 {
+        font-size: 2.5rem;
+      }
+
+      .parallax p {
+        font-size: 1rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #ec6a43;
+      margin: 0;
+      font-size: 1.5em;
+      color: #ec6a43;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+      text-align: center;
+      background-color: #ffffff00;
+      display: inline-block;
+      padding-inline: 100px;
+    }
+
+    a:visited {
+      color: #ec6a43;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="parallax">
+    <div class="overlay">
+      <h1 data-aos="fade-down">排球夢想</h1>
+      <p data-aos="fade-up">一場關於熱血與團隊精神的故事</p>
+      <div class="centered">
+        <div class="taichi-wrapper rotate-ani">
+          <div class="taichi-white-bk taichi-bk"></div>
+          <div class="taichi-dark-bk taichi-bk"></div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <section class="content-section">
+    <div class="story" data-aos="fade-right">
+
+      <h2>第一章：起點</h2>
+      <p>每個夢想都從一顆排球開始，這是一支熱血少年團隊的故事。</p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="./img/第一章.jpg" alt="排球起點">
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="image" data-aos="zoom-in">
+      <img src="./img/齒輪.jpg" alt="激烈比賽">
+    </div>
+    <div class="story" data-aos="fade-left">
+      <h2>第二章：挑戰</h2>
+      <p>面對強大的對手，他們學會了如何堅持和合作。</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="story" data-aos="fade-right">
+      <h2>第三章：榮耀</h2>
+      <p>經歷無數汗水與淚水，終於迎來了勝利的那一天。</p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="./img/勝利.jpg" alt="榮耀時刻">
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="image" data-aos="zoom-in">
+      <img src="./img/對手.jpg" alt="新挑戰">
+    </div>
+    <div class="story" data-aos="fade-left">
+      <h2>第四章：新挑戰</h2>
+      <p>新的對手出現，這是他們未曾見過的挑戰。</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="story" data-aos="fade-right">
+      <h2>第五章：困境</h2>
+      <p>傷病與挫折讓他們差點失去信心，但他們沒有放棄。</p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="./img/失敗.webp" alt="困境">
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="image" data-aos="zoom-in">
+      <img src="./img/重生.webp" alt="重新站起">
+    </div>
+    <div class="story" data-aos="fade-left">
+      <h2>第六章：重生</h2>
+      <p>重新站起，他們變得更堅強、更有決心。</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="story" data-aos="fade-right">
+      <h2>第七章：巔峰對決</h2>
+      <p>巔峰對決的比賽，所有的努力都在這一刻展現。</p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="./img/飛.jpg" alt="巔峰對決">
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="image" data-aos="zoom-in">
+      <img src="./img/結局.webp" alt="結局">
+    </div>
+    <div class="story" data-aos="fade-left">
+      <h2>第八章：新的開始</h2>
+      <p>比賽結束，但他們知道，排球夢想永不會停下。</p>
+    </div>
+  </section>
+
+
+  <footer>
+    <a href="">
+      <p>
+        < </p>
+    </a>
+    <a href="./R.html">
+      <p>></p>
+    </a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
